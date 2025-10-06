@@ -1,13 +1,26 @@
 footer{
     background-color: white;
     color: black;
-    font-family: "Quarion";
+  font-family: "Quarion", "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;        /* base ~16px; try 0.9rem, 1.1rem, etc. */
+  line-height: 1.5;
 }
 
 
-#Hilo {
-    background-color: rgba(224, 224, 220);
+.navbar .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;     
+  text-decoration-thickness: 2px;  
 }
+
+.custom-navbar-color {
+  background-color: rgb(231, 231, 228); 
+}
+
+.navbar{
+  font-family: "Quarion", "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
 
 
 

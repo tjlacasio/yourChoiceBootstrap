@@ -10,13 +10,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -26,36 +27,54 @@
 
 
 <!-- NAVBAR -->
-<nav class="navbar bg-beige">
-    <div class="containerfluid px-0" id = "Hilo">
-    <div class = "navbar-brand m-0 ps-3 ps-sm-4 ps-lg-5">
-        <img src="kinolau.webp" class="img-fluid" width="320" alt="logo">
-    </div>
+<nav class="navbar navbar-expand-lg custom-navbar-color">
+  <div class="container-fluid px-0">
+    <a class="navbar-brand ps-4" href="#">
+      <img src="kinolau.webp" width="320" class="d-block" alt="logo">
+    </a>
+
+    <button class="navbar-toggler me-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 <div class="collapse navbar-collapse" id="mainNav">
-    <ul class="nav justify-content-end">
-        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#cart" aria-label="Cart"><i class="bi bi-bag"></i></a></li>
+  <div class="ms-auto d-flex align-items-center">
+    <ul class="navbar-nav me-5">
+      <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
     </ul>
-</div>
+    <ul class="navbar-nav compact align-items-center">
+      <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link nav-icon" href="#instagram" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-icon" href="#cart" aria-label="Cart">
+          <i class="bi bi-cart3"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 </nav>
 
+<!--Background image-->
 <div class="row">
         <div class="col"> 
-        <img src="Screenshot 2025-10-05 at 7.30.52 PM.png" alt="kinolau-back" class="img-fluid rounded mx-auto d-block py-1">
-    </div>
+<div class="container-fluid px-0">
+  <img src="Screenshot 2025-10-05 at 7.30.52 PM.png" class="w-100 d-block" alt="kinolau background">
 </div>
-
-
+        </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
 <div class="container pt-4">
 <div class="row g-4 align-items-center">
 <div class="col-md-4">
-<h5 class="mb-0 tracking">CONTACT :</h5>
+<h5 class="mb-0 contact-label fs-3">CONTACT :</h5>
 </div>
 <div class="col-md-8">
 <p class="mb-2">info@shopkinolau.com</p>
@@ -64,6 +83,7 @@
 </div>
 </div>
 </footer>
+
 <script src="" async defer></script>
     </body>
 </html>
